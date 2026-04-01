@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum Role {
+  viewer
+  analyst
+  admin
+}
+
+enum Status {
+  active
+  inactive
+}
+
+enum RecordType {
+  income
+  expense
+}
+
+// ─── Models ───────────────────────────────────────────────────────────────────
+
+model User {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String   @db.VarChar(100)
+  email     String   @unique @db.VarChar(255)
+  password  String   @db.VarChar(255)
+  role      Role     @default(viewer)
+  status    Status   @default(active)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  records Record[]
+
+  @@index([email])
+  @@index([role])
+  @@index([status])
+  @@map("users")
+}
+
+model Record {
+  id        String     @id @default(uuid()) @db.Uuid
+  // Amount stored as integer (paisa/cents) to avoid floating-point precision issues.
+  // e.g. ₹1,500.00 is stored as 150000
+  amount    Int
+  type      RecordType
+  category  String     @db.VarChar(100)
+  date      DateTime   @db.Date
+  notes     String?    @db.Text
+  isDeleted Boolean    @default(false) @map("is_deleted")
+  createdAt DateTime   @default(now()) @map("created_at")
+  updatedAt DateTime   @updatedAt @map("updated_at")
+
+  userId String @map("user_id") @db.Uuid
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Indexes optimized for the dashboard queries and record filtering
+  @@index([userId])
+  @@index([type])
+  @@index([category])
+  @@index([date])
+  @@index([isDeleted])
+  // Composite: most common query — non-deleted records filtered by type + date
+  @@index([isDeleted, type, date])
+  @@map("records")
+}

@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import authRoutes from './modules/auth/auth.routes.js';
+import globalErrorHandler from './middlewares/error.middleware.js';
 
 const app = express();
 
@@ -15,12 +17,17 @@ app.get('/', (_req, res) => {
   });
 });
 
+app.use('/api/auth', authRoutes);
+
 app.use((_req, res) => {
   res.status(404).json({
     success: false,
-    message: 'Route not found',
+    message: 'Route not found. Valid endpoints start with /api/auth',
     data: null,
   });
 });
 
+app.use(globalErrorHandler);
+
 export default app;
+
