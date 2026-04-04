@@ -6,13 +6,9 @@ const options = {
     info: {
       title: 'Zorvyn Finance API',
       version: '1.0.0',
-      description: 'Finance Data Processing and Access Control Backend',
+      description: 'Finance Data Processing and Access Control Backend. **Note: Deployed on Render Free Tier — Expect 1-2 mins cold start on first request.**',
     },
     servers: [
-      {
-        url: 'http://localhost:3000',
-        description: 'Local development server',
-      },
       {
         url: 'https://zorvyn-finance-backend-sa04.onrender.com',
         description: 'Production server',
@@ -71,7 +67,9 @@ const options = {
           summary: 'Get all records',
           security: [{ bearerAuth: [] }],
           responses: { 200: { description: 'List of records' } }
-        },
+        }
+      },
+      '/api/records/create': {
         post: {
           tags: ['Records'],
           summary: 'Create a new record',

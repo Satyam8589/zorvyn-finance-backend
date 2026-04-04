@@ -1,6 +1,9 @@
 # Zorvyn Finance API Documentation
 
-**Base URL:** `http://localhost:3000`  
+> [!IMPORTANT]
+> **PLEASE NOTE:** This backend is deployed on **Render's Free Tier**. Due to Render's "Cold Start" behavior, the first request after a period of inactivity may take **approx. 1-2 minutes** to spin up. Please be patient and allow the first request to complete. Subsequent requests will be fast!
+
+**Base URL:** `https://zorvyn-finance-backend-sa04.onrender.com`  
 **Version:** 1.0.0  
 **Content-Type:** `application/json`
 

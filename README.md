@@ -1,6 +1,10 @@
 # 🏦 Zorvyn Finance Backend - Dashboard API
 
-A professional, role-based backend system for financial records management and data-driven insights. Built with Node.js, Express, and Prisma ORM for the Zorvyn FinTech Backend Developer Intern assignment.
+> [!IMPORTANT]
+> **PLEASE NOTE:** This backend is deployed on **Render's Free Tier**. Due to Render's "Cold Start" behavior, the first request after a period of inactivity may take **approx. 1-2 minutes** to spin up. Please be patient and allow the first request to complete. Subsequent requests will be fast!
+
+A professional, role-based backend system for financial records management and data-driven insights. 
+Built with Node.js, Express, and Prisma ORM for the Zorvyn FinTech Backend Developer Intern assignment.
 
 ## 🚀 Overview
 
