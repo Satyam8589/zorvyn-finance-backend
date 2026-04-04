@@ -64,9 +64,10 @@ const options = {
       '/api/records': {
         get: {
           tags: ['Records'],
-          summary: 'Get all records',
+          summary: 'List records (Dynamic filtering based on user role)',
+          description: 'Get all records. **Role-based behavior:** `viewer` role only sees their own records; `analyst` and `admin` roles see all records in the system.',
           security: [{ bearerAuth: [] }],
-          responses: { 200: { description: 'List of records' } }
+          responses: { 200: { description: 'Records fetched successfully' } }
         }
       },
       '/api/records/create': {
