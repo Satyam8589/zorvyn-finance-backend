@@ -6,6 +6,10 @@
 A professional, role-based backend system for financial records management and data-driven insights. 
 Built with Node.js, Express, and Prisma ORM for the Zorvyn FinTech Backend Developer Intern assignment.
 
+## 🔗 Live API Testing
+🚀 **Interactive Documentation:** [Live Swagger UI](https://zorvyn-finance-backend-sa04.onrender.com/api-docs)  
+*(Use the Swagger UI to test individual endpoints directly from your browser!)*
+
 ## 🚀 Overview
 
 The **Zorvyn Finance Dashboard** is a backend system designed for efficient storage and management of financial entries, user roles, and summary-level analytics. It supports a hierarchical permissions model (Viewer, Analyst, Admin) and provides aggregated insights like income/expense trends and category-wise totals.
