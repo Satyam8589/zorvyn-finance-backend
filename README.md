@@ -1,18 +1,18 @@
-# 🏦 Zorvyn Finance Backend - Dashboard API
+# 🏦 Finance Management Backend - Dashboard API
 
 > [!IMPORTANT]
 > **PLEASE NOTE:** This backend is deployed on **Render's Free Tier**. Due to Render's "Cold Start" behavior, the first request after a period of inactivity may take **approx. 1-2 minutes** to spin up. Please be patient and allow the first request to complete. Subsequent requests will be fast!
 
 A professional, role-based backend system for financial records management and data-driven insights. 
-Built with Node.js, Express, and Prisma ORM for the Zorvyn FinTech Backend Developer Intern assignment.
+Built with Node.js, Express, and Prisma ORM for the Finance Management Backend Developer Intern assignment.
 
 ## 🔗 Live API Testing
-🚀 **Interactive Documentation:** [Live Swagger UI](https://zorvyn-finance-backend-sa04.onrender.com/api-docs)  
+🚀 **Interactive Documentation:** [Live Swagger UI](https://finance-management-backend-sa04.onrender.com/api-docs)  
 *(Use the Swagger UI to test individual endpoints directly from your browser!)*
 
 ## 🚀 Overview
 
-The **Zorvyn Finance Dashboard** is a backend system designed for efficient storage and management of financial entries, user roles, and summary-level analytics. It supports a hierarchical permissions model (Viewer, Analyst, Admin) and provides aggregated insights like income/expense trends and category-wise totals.
+The **Finance Management Dashboard** is a backend system designed for efficient storage and management of financial entries, user roles, and summary-level analytics. It supports a hierarchical permissions model (Viewer, Analyst, Admin) and provides aggregated insights like income/expense trends and category-wise totals.
 
 ## 🛠️ Tech Stack
 
@@ -98,8 +98,8 @@ Exceeding the limit returns `429 Too Many Requests`.
 
 **1. Clone and Install:**
 ```bash
-git clone https://github.com/Satyam8589/zorvyn-finance-backend.git
-cd zorvyn-finance-backend
+git clone https://github.com/Satyam8589/finance-management-backend.git
+cd finance-management-backend
 npm install
 ```
 

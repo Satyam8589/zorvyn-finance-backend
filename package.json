@@ -1,14 +1,14 @@
 {
-  "name": "zorvyn-finance-backend",
+  "name": "finance-management-backend",
   "version": "1.0.0",
   "description": "Finance Data Processing and Access Control Backend",
-  "homepage": "https://github.com/Satyam8589/zorvyn-finance-backend#readme",
+  "homepage": "https://github.com/Satyam8589/finance-management-backend#readme",
   "bugs": {
-    "url": "https://github.com/Satyam8589/zorvyn-finance-backend/issues"
+    "url": "https://github.com/Satyam8589/finance-management-backend/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Satyam8589/zorvyn-finance-backend.git"
+    "url": "git+https://github.com/Satyam8589/finance-management-backend.git"
   },
   "license": "ISC",
   "author": "Satyam kumar singh",

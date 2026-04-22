@@ -22,7 +22,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.get('/', (_req, res) => {
   res.json({
     success: true,
-    message: 'Zorvyn Finance API is running',
+    message: 'Finance Management API is running',
     version: '1.0.0',
   });
 });

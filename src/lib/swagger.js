@@ -4,13 +4,13 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Zorvyn Finance API',
+      title: 'Finance Management API',
       version: '1.0.0',
       description: 'Finance Data Processing and Access Control Backend. **Note: Deployed on Render Free Tier — Expect 1-2 mins cold start on first request.**',
     },
     servers: [
       {
-        url: 'https://zorvyn-finance-backend-sa04.onrender.com',
+        url: 'https://finance-management-backend-sa04.onrender.com',
         description: 'Production server',
       },
     ],

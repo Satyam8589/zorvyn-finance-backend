@@ -1,10 +1,10 @@
-# Zorvyn Finance API Documentation
+# Finance Management API Documentation
 
 > [!IMPORTANT]
 > **PLEASE NOTE:** This backend is deployed on **Render's Free Tier**. Due to Render's "Cold Start" behavior, the first request after a period of inactivity may take **approx. 1-2 minutes** to spin up. Please be patient and allow the first request to complete. Subsequent requests will be fast!
 
-**Base URL:** `https://zorvyn-finance-backend-sa04.onrender.com`  
-**Interactive Docs:** [Live API Testing (Swagger UI)](https://zorvyn-finance-backend-sa04.onrender.com/api-docs)  
+**Base URL:** `https://finance-management-backend-sa04.onrender.com`  
+**Interactive Docs:** [Live API Testing (Swagger UI)](https://finance-management-backend-sa04.onrender.com/api-docs)  
 **Version:** 1.0.0  
 **Content-Type:** `application/json`
 
