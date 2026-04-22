@@ -7,8 +7,11 @@ A professional, role-based backend system for financial records management and d
 Built with Node.js, Express, and Prisma ORM for the Finance Management Backend Developer Intern assignment.
 
 ## 🔗 Live API Testing
-🚀 **Interactive Documentation:** [Live Swagger UI](https://finance-management-backend-sa04.onrender.com/api-docs)  
+🚀 **Interactive Documentation:** [Live Swagger UI](https://finance-management-backend-qwxr.onrender.com/api-docs)  
 *(Use the Swagger UI to test individual endpoints directly from your browser!)*
+
+📦 **Postman Collection:** [`finance_management_postman_collection.json`](./finance_management_postman_collection.json)  
+*(Import this file into Postman for automated testing and pre-configured environment variables.)*
 
 ## 🚀 Overview
 
@@ -122,7 +125,27 @@ npx prisma db seed
 npm run dev
 ```
 
-Server starts at `http://localhost:3000`
+Server starts at `http://localhost:5000`
+
+---
+
+## 🐳 Docker Setup (Recommended)
+
+The easiest way to run the application locally with all dependencies pre-configured and optimized production settings.
+
+**1. Build and Start:**
+```bash
+docker-compose up --build
+```
+
+**2. Accessing the API:**
+The server will be available at `http://localhost:5000`.
+
+**Benefits of Docker:**
+*   **Zero-Config:** No need to install Node.js locally.
+*   **Optimized:** Uses multi-stage builds for a secure, lightweight image.
+*   **Isolated:** No conflicts with other local projects.
+*   **Secure:** Runs as a non-root user.
 
 ---
 
