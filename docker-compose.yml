@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    # Restart policy for stability
+    restart: always
+    # Map logs volume for debugging if needed
+    # volumes:
+    #   - ./logs:/app/logs

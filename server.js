@@ -1,6 +1,10 @@
 import 'dotenv/config';
+import { validateEnv } from './src/utils/validateEnv.js';
 import app from './src/app.js';
 import http from 'http';
+
+// Best Practice: Validate environment before starting
+validateEnv();
 
 const PORT = process.env.PORT || 5000;
 
